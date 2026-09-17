@@ -1,0 +1,62 @@
+{
+  "name": "@crossly/sdk",
+  "version": "0.1.0",
+  "description": "Official TypeScript SDK for the Crossly public API. Multi-marketplace crossposting + automation — list once, sell on 15+ platforms (Poshmark, eBay, Etsy, Mercari, Depop, Grailed, Vinted, Whatnot, Shopify, and more).",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "keywords": [
+    "crossly",
+    "crosslister",
+    "reseller",
+    "crossposting",
+    "poshmark",
+    "ebay",
+    "mercari",
+    "depop",
+    "grailed",
+    "vinted",
+    "etsy",
+    "shopify",
+    "automation",
+    "marketplace",
+    "sdk",
+    "typescript"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crossly-dev/crossly-sdk.git"
+  },
+  "homepage": "https://crossly.net",
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.0",
+    "vitest": "^2.1.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "bugs": {
+    "url": "https://github.com/crossly-dev/crossly-sdk/issues"
+  }
+}
